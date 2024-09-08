@@ -10676,6 +10676,20 @@ div.item:nth-of-type(4) {
 div.item:nth-of-type(5) {
     --offset: 5;
 }
+div.item:nth-of-type(6) {
+    --offset: 6;
+}
+
+div.item:nth-of-type(7) {
+    --offset: 7;
+}
+
+div.item:nth-of-type(8) {
+    --offset: 8;
+}
+div.item:nth-of-type(9) {
+    --offset: 9;
+}
 
 input:nth-of-type(1) {
     grid-column: 2 / 3;
