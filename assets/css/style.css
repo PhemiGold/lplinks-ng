@@ -10499,7 +10499,7 @@ blockquote .blockquote-footer:before {
 }
 
 carouse {  
-max-width: 1200px;  
+max-width: 100vw;  
 position: absolute;  
 transform: translate(-50%, -50%);  
 top: 50%;  
@@ -10522,7 +10522,9 @@ width: 100%;
 .imagegroup img{  
 flex-shrink: 0;  
 object-fit: cover;  
-border: 3px solid white;  
+border: 3px solid white; 
+    width: 200px;
+    height: 145px;
 }  
 .imagegroup {  
 animation: travel 20s ease-in-out infinite;  
