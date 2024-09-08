@@ -583,7 +583,69 @@
         <div class="row gap-150 align-items-center">
             
             <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
-                
+                <input type="radio" name="position" id="pos1" />
+    <input type="radio" name="position" id="pos2" />
+    <input type="radio" name="position" id="pos3" checked/>
+    <input type="radio" name="position" id="pos4" />
+    <input type="radio" name="position" id="pos5" />
+    <input type="radio" name="position" id="pos6" />
+    <input type="radio" name="position" id="pos7" />
+    <input type="radio" name="position" id="pos8" />
+    <input type="radio" name="position" id="pos9" />
+
+    <!-- Carousel items -->
+    <main id="carousel">
+        <div class="item">
+            <img src="https://i.ibb.co/Lx5Cgg1/IMG-20240908-WA0007.jpg" alt="Image 1">
+           
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/vPJDkjH/IMG-20240908-WA0008.jpg" alt="Image 2">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/ph1mLBw/IMG-20240908-WA0009.jpg" alt="Image 3">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/CPTTWqR/IMG-20240908-WA0005.jpg" alt="Image 4">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/3r723y2/IMG-20240907-WA0001.jpg" alt="Image 5">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/L6VHYVd/IMG-20240907-WA0009.jpg" alt="Image 6">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/7yfZ0VX/IMG-20240907-WA0003.jpg" alt="Image 7">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/D1q5bMG/IMG-20240907-WA0010.jpg" alt="Image 8">
+        </div>
+        <div class="item">
+            <img src="https://i.ibb.co/TBT5dBt/IMG-20240907-WA0011.jpg" alt="Image 9">
+        </div>
+    </main>
+
+    <!-- JavaScript to enable auto-sliding -->
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 9; // Update to the new total number of slides
+
+        function autoSlide() {
+            // Uncheck all radio buttons
+            document.querySelectorAll('input[name="position"]').forEach((radio) => {
+                radio.checked = false;
+            });
+
+            // Check the next radio button
+            document.getElementById(`pos${currentSlide}`).checked = true;
+
+            // Increment the currentSlide or reset if it's the last slide
+            currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+        }
+
+        // Set the interval for auto sliding every 2 seconds
+        setInterval(autoSlide, 2000);
+    </script>
             </div>
         </div>
     </div>
@@ -605,55 +667,7 @@
                     <!-- Updated Form -->
                     <form id="orderForm" action="https://formspree.io/f/xyzgvlab" method="POST" onsubmit="return validateForm()">
                         <div class="row gap-20">
-                            <!-- Customer Information Section -->
-                            <div class="col-12">
-           <!-- Radio buttons to control slides -->
-    <input type="radio" name="position" id="pos1" />
-    <input type="radio" name="position" id="pos2" />
-    <input type="radio" name="position" id="pos3" checked/>
-    <input type="radio" name="position" id="pos4" />
-    <input type="radio" name="position" id="pos5" />
-
-    <!-- Carousel items -->
-    <main id="carousel">
-        <div class="item">
-            <img src="https://i.ibb.co/Lx5Cgg1/IMG-20240908-WA0007.jpg" alt="Image 1">
-              </div>
-        <div class="item">
-            <img src="https://i.ibb.co/vPJDkjH/IMG-20240908-WA0008.jpg" alt="Image 2">
-        </div>
-        <div class="item">
-            <img src="https://i.ibb.co/ph1mLBw/IMG-20240908-WA0009.jpg" alt="Image 3">
-        </div>
-        <div class="item">
-            <img src="https://i.ibb.co/CPTTWqR/IMG-20240908-WA0005.jpg" alt="Image 4">
-        </div>
-        <div class="item">
-            <img src="https://i.ibb.co/3r723y2/IMG-20240907-WA0001.jpg" alt="Image 5">
-        </div>
-    </main>
-
-    <!-- JavaScript to enable auto-sliding -->
-    <script>
-        let currentSlide = 1;
-        const totalSlides = 5;
-
-        function autoSlide() {
-            // Uncheck all radio buttons
-            document.querySelectorAll('input[name="position"]').forEach((radio) => {
-                radio.checked = false;
-            });
-
-            // Check the next radio button
-            document.getElementById(`pos${currentSlide}`).checked = true;
-
-            // Increment the currentSlide or reset if it's the last slide
-            currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
-        }
-
-        // Set the interval for auto sliding every 2 seconds
-        setInterval(autoSlide, 2000);
-    </script>                      <h3 style="font-weight: bold;">Customer Information</h3>
+                      <h3 style="font-weight: bold;">Customer Information</h3>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
