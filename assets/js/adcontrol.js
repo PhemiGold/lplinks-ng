@@ -1,14 +1,12 @@
-// Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCdzrOq_aQ_DK7GE7hjHDMbBJlZ5Bh_m4g",
-    authDomain: "lplinks-2024.firebaseapp.com",
-    projectId: "lplinks-2024",
-    storageBucket: "lplinks-2024.appspot.com",
-    messagingSenderId: "881621858077",
-    appId: "1:881621858077:web:be4d9e861aa0e2943853f4",
-    measurementId: "G-73PSN36L7Y"
+  apiKey: "AIzaSyAqToeRUINNO6AIYaIS8QDUs2PjcCDQiHo",
+  authDomain: "adlpl-8f445.firebaseapp.com",
+  projectId: "adlpl-8f445",
+  storageBucket: "adlpl-8f445.appspot.com",
+  messagingSenderId: "713832026031",
+  appId: "1:713832026031:web:a18668d4a309084706e95a",
+  measurementId: "G-TLWWH9XNE9"
 };
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
