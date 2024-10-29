@@ -18,7 +18,7 @@ body {
     font-family: var(--base-font);
     --base-font: 'Hind', sans-serif;
     --heading-font: 'Poppins', sans-serif;
-    --primary-color: #1b410f;
+    --primary-color: #37aa37;
     --heading-color: #000000;
     --base-color: #768492;
     --lighter-color: #F5F5F5;
@@ -110,7 +110,9 @@ footer:after {
 }
 
 /*======= Input Styles =======*/
-
+input{
+    width: full;
+}
 input,
 select,
 textarea,
@@ -6856,6 +6858,8 @@ width: 180px
 .project-item .content {
     position: absolute;
     left: 0;
+    display: flex;
+    flex-direction: column;
     top: 0;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -10846,8 +10850,9 @@ input:nth-of-type(5):checked ~ main#carousel {
     max-width: 90%; /* Max width for responsiveness */
     max-height: 90%; /* Max height for responsiveness */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
   }
   
