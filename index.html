@@ -13,6 +13,7 @@
     <script src="assets/js/adcontrol.js"></script>
     <link rel="stylesheet" href="assets/css/flaticon.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.min.css">
@@ -49,14 +50,14 @@
                             <div class="col-xl-8 col-lg-7">
                                 <div class="top-right text-center text-lg-end">
                                     <ul>
-                                        <li><i class="far fa-envelope"></i> <a href="mailto:support@gmail.com">info@limestoneprocessing.com.ng</a></2348036884353>
-                                        <li><i class="far fa-phone"></i> <a href="callto:+2348067923690">+234 806 792 3690</a><a href="callto:+2348067923690">+234 803 688 4353</a></li>
+                                        <li><i class="fa-regular fa-envelope"></i></i> <a href="mailto:support@gmail.com">info@limestoneprocessing.com.ng</a></2348036884353>
+                                        <li><i class="fa-solid fa-mobile-screen-button"></i> <a href="callto:+2348067923690">+234 806 792 3690</a><a href="callto:+2348067923690">+234 803 688 4353</a></li>
                                         <li>
                                             <div class="social-style-one">
                                                 <a href="https://x.com/limestonpll" target="_blank"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                                                <a href="https://www.linkedin.com/in/limestone-processing-ltd-453960328/"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.instagram.com/limestonepll/"><i class="fab fa-instagram"></i></a>
                                             </div>
                                         </li>
                                     </ul>
@@ -141,7 +142,7 @@
         
                 <!-- Appointment Form -->
                 <div class="appointment-form">
-                    <form method="POST" action="https://formspree.io/f/your-form-id">
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/xyzgvlab">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Name" required>
                         </div>
@@ -154,9 +155,37 @@
                         <div class="form-group">
                             <button type="submit" class="theme-btn style-two">Submit now</button>
                         </div>
-                        <!-- Hidden success message -->
-                        <div id="msgSubmit" class="hidden"></div>
+                        <!-- Success message -->
+                        <div id="msggSub" style="display: none; color: green;">Thank you! Your message has been sent.</div>
                     </form>
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+                            event.preventDefault();
+                            const form = event.target;
+                            const formData = new FormData(form);
+                    
+                            try {
+                                const response = await fetch(form.action, {
+                                    method: 'POST',
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                });
+                    
+                                if (response.ok) {
+                                    document.getElementById('msggSub').style.display = 'block';
+                                    form.reset();
+                                } else {
+                                    alert("Oops! There was a problem submitting your form.");
+                                }
+                            } catch (error) {
+                                console.error("Error:", error);
+                                alert("There was an error submitting the form. Please try again.");
+                            }
+                        });
+                    </script>
+                                        
                 </div>
             </div>
         </section>
@@ -441,10 +470,10 @@
                                 <h6>Dr. Bala M. Inuwa</h6>
                                 <span class="designation">CEO & Founder</span>
                                 <div class="social-style-two">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
                                     <a href="https://x.com/limestonpll" target="_blank"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/limestonepll/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/limestone-processing-ltd-453960328/"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -523,7 +552,7 @@
         <!-- FAQ Area end -->
 
         
-        <section id="carousel-section" class="carousel-area bgc-lighter py-70 rpy-100 rel z-1" style="margin-top: 50px; background:white;">
+        <!-- <section id="carousel-section" class="carousel-area bgc-lighter py-70 rpy-100 rel z-1" style="margin-top: 50px; background:white;">
     <div class="container">
         <div class="row gap-150 align-items-center">
             
@@ -539,8 +568,6 @@
                 <input type="radio" name="position" id="pos9" style="visibility: hidden"/>
 
 
-
-    <!-- JavaScript to enable auto-sliding -->
     <script>
         let currentSlide = 1;
         const totalSlides = 9; // Update to the new total number of slides
@@ -598,8 +625,9 @@
         <span></span><span></span>
     </div>
         </section>
+         -->
         
-        <section id="order-form" class="contact-area bgc-lighter py-70 rpy-100 rel z-1" style="margin-top: 50px;">
+         <section id="order-form" class="contact-area bgc-lighter py-70 rpy-100 rel z-1" style="margin-top: 50px;">
             <div class="container">
                 <div class="row gap-150 align-items-center">
                     <div class="col-lg-6">
@@ -615,28 +643,28 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="name" style="font-weight: bold;">Full Name</label>
+                                            <label for="name" style="font-weight: bold;">Full Name*</label>
                                             <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="phone_number" style="font-weight: bold;">Phone Number</label>
+                                            <label for="phone_number" style="font-weight: bold;">Phone Number*</label>
                                             <input type="text" id="phone_number" name="phone_number" class="form-control" placeholder="Phone No" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label for="address" style="font-weight: bold;">Address</label>
+                                            <label for="address" style="font-weight: bold;">Address*</label>
                                             <input type="text" id="address" name="address" class="form-control" placeholder="Your Address" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label for="email" style="font-weight: bold;">Email Address</label>
+                                            <label for="email" style="font-weight: bold;">Email Address*</label>
                                             <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -648,29 +676,15 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="product" style="font-weight: bold;">Product</label>
+                                            <label for="product" style="font-weight: bold;">Product*</label>
                                             <input type="text" id="product" name="product" class="form-control" placeholder="Product Name" required>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="specification" style="font-weight: bold;">Specification</label>
-                                            <input type="text" id="specification" name="specification" class="form-control" placeholder="Product Specifications" required>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label for="quantity" style="font-weight: bold;">Quantity</label>
-                                            <input type="number" id="quantity" name="quantity" class="form-control" placeholder="Quantity" required>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <!-- Order Notes Section -->
                                     <div class="col-12">
-                                        <h3 style="font-weight: bold;">Order Notes</h3>
+                                        <h3 style="font-weight: bold;">Order Notes (if any)</h3>
                                         <div class="form-group">
                                             <textarea name="order_notes" id="order_notes" class="form-control" rows="4" placeholder="Additional Notes"></textarea>
                                             <div class="help-block with-errors"></div>
@@ -688,14 +702,14 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
+                    <!-- <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
                         <div class="contact-image-part rel">
                             <div class="experience-years">
                                 <h6 class="title">Our Expertise</h6>
                                 <h6>We Specialize in Limestone Processing and Fertilizer Blending.</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
             </div>
             </div>
             <div class="bg-lines">
@@ -711,13 +725,17 @@
                         <div class="col-xl-3 col-lg-2 col-sm-6">
                             <div class="footer-widget newsletter-widget" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="50">
                                 <h5 class="footer-title">Visit Us</h5>
-                                <p style="color:white;">Tamburawa Road, Kumbotso LG, Kano State.
+                                <p style="color:white;">
+                                    Tamburawa Road, 
                                </p>
+                                <p style="color:white;">Kumbotso Local Government, </p>
+                                <p style="color:white;">Kano State,</p>
                                 <p style="color:white;">Nigeria</p>
+                                
                                 
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-2 col-sm-6">
+                        <!-- <div class="col-xl-3 col-lg-2 col-sm-6">
                        <div class="footer-widget newsletter-widget" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="50">
                                 <h5 class="footer-title">Subscribe to Our Newsletter</h5>
                                 <p>Stay updated with our latest news and offers.</p>
@@ -727,7 +745,7 @@
                                     <div class="form-message" id="formMessage"></div>
                                 </form>
                        </div>
-                        </div>
+                        </div> -->
                         
                     </div>
                 </div>
@@ -741,7 +759,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="copyright-text" style="whitespace: nowrap;">
-                                <p>Copy@2024 <a href="/">Limestone Processing Links, Nigeria</a>. All Rights reserved </p>
+                                <p>&copy; 2024 <a href="/">Limestone Processing Links, Nigeria</a>. All Rights reserved. </p>
                             </div>
                         </div>
                         <div class="col-lg-6 text-lg-end">
