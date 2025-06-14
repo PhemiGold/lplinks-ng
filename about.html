@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Leading limestone processing company in Nigeria">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home | LIMESTONE PROCESSING LINKS NIGERIA</title>
+    <link rel="shortcut icon" href="assets/images/linkkkk.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script src="assets/js/adcontrol.js"></script>
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .values-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        .values-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .statement-box {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .statement-box:hover {
+            transform: translateY(-10px);
+        }
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: #f0f8ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+        }
+        .statement-title {
+            color: #2a5d8a;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .statement-text {
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .values-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="preloader">
+            <div class="custom-loader"></div>
+        </div>
+        <div id="ad-container" class="overlay">
+            <div class="content">
+              <button class="close-btn" onclick="closeDiv()">✖</button>
+              <img src="" alt="" class="centered-image" />
+            </div>
+        </div>
+          
+        <header class="main-header">
+            <div class="header-top-wrap bgc-gray rel z-1">
+                <div class="container container-1620">
+                    <div class="header-top">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="top-left text-center text-lg-start" style="color:white;">
+                                    WELCOME TO LIMESTONE PROCESSING LINKS LIMITED
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="top-right text-center text-lg-end">
+                                    <ul>
+                                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:support@gmail.com">info@limestoneprocessing.com.ng</a></li>
+                                        <li><i class="fa-solid fa-mobile-screen-button"></i> <a href="callto:+2348067923690">+234 806 792 3690</a> / <a href="callto:+2348036884353">+234 803 688 4353</a></li>
+                                        <li>
+                                            <div class="social-style-one">
+                                                <a href="https://x.com/limestonpll" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://www.linkedin.com/in/limestone-processing-ltd-453960328/"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.instagram.com/limestonepll/"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-lines for-black-bg">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                </div>
+            </div>
+
+            <div class="header-upper">
+                <div class="container container-1620 clearfix">
+                    <div class="header-inner rpy-10 rel d-flex align-items-center" style="padding-top: 10px;padding-bottom: 10px;">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="index.html"><img src="https://i.ibb.co/JmC5zZp/logowww.png" alt="Logo" title="Logo"></a></div>
+                        </div>
+
+                        <div class="nav-outer ms-lg-auto clearfix">
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header py-10">
+                                    <div class="mobile-logo">
+                                        <a href="index.html">
+                                            <img src="assets/images/logos/white-logo.png" class="mob-logo" alt="Logo" title="Logo">
+                                       </a>
+                                    </div>
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button> 
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="current"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="services.html">Our Services</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul> 
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="menu-btns ms-lg-auto">
+                            <div class="menu-sidebar" style="margin-left: 30px;">
+                                <button class="bg-transparent"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-lines">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                </div>
+            </div>
+        </header>
+
+        <section class="main-slider-area rel z-1">
+            <div class="main-slider-active">
+                <div class="slider-item" style="background-image: url(assets/images/slider/ware1.jpg);">
+                    <div class="container">
+                        <div class="slide-content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                            <span class="sub-title">LIMESTONE PROCESSING COMPANY</span>
+                            <h1>Limestone Granulated, For Fertilizer Blending.</h1>
+                            <p>Supplying superior limestone products that lay the groundwork for lasting success.</p>
+                            <a href="products.html" class="theme-btn mt-20">Explore Products</a>
+                        </div>
+                    </div>
+                    <div class="bg-lines for-black-bg">
+                        <span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="slider-item" style="background-image: url(assets/images/slider/slide2.jpg);">
+                    <div class="container">
+                        <div class="slide-content">
+                            <span class="sub-title">LIMESTONE PROCESSING COMPANY</span>
+                            <h1>Shaping Excellence in Limestone Production</h1>
+                            <p>From quarry to your factory, we deliver premium limestone products tailored to meet your blending and manufacturing needs with precision and efficiency.</p>
+                            <a href="services.html" class="theme-btn mt-20">Our Services</a>
+                        </div>
+                    </div>
+                    <div class="bg-lines for-black-bg">
+                        <span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="slider-item" style="background-image: url(assets/images/slider/slide1.jpg);">
+                    <div class="container">
+                        <div class="slide-content">
+                            <span class="sub-title">LIMESTONE PROCESSING COMPANY</span>
+                            <h1>Empowering Industries with Precision Limestone Processing.</h1>
+                            <p>From Raw Material to Refined Product, We Offer Unmatched Expertise in Limestone Processing and Innovation.</p>
+                            <a href="about.html" class="theme-btn mt-20">About Us</a>
+                        </div>
+                    </div>
+                    <div class="bg-lines for-black-bg">
+                        <span></span><span></span>
+                        <span></span><span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-wrap">
+                <div class="container rel">
+                    <div class="main-slider-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="values-container">
+                <div class="statement-box mission-box">
+                    <div class="icon-circle">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2 class="statement-title">Our Mission</h2>
+                    <p class="statement-text">
+                        To be a trusted leader in the limestone industry, responsibly extracting, processing and delivering high quality limestone products that meet the needs of our customers, with a commitment to sustainability, innovation and excellence.
+                    </p>
+                </div>
+                <div class="statement-box vision-box">
+                    <div class="icon-circle">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h2 class="statement-title">Our Vision</h2>
+                    <p class="statement-text">
+                        To be the global leader in limestone processing, recognized for our commitment to sustainable practices, cutting-edge technology and unparalleled product quality.
+                    </p>
+                </div>
+                <div class="statement-box values-box">
+                    <div class="icon-circle">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h2 class="statement-title">Our Core Values</h2>
+                    <p class="statement-text">
+                        Genuinity, integrity, customer interest, quantity and quality, innovation, excellence service through teamwork.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-area pt-75 rpt-45 rel z-1">
+            <div class="container">
+                <div class="row gap-90 align-items-center">
+                    <div class="col-xl-6">
+                        <div class="about-image mt-55" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
+                            <img src="assets/images/slider/ware1.jpg" alt="About">
+                            <div class="circle-progress-wrap">
+                                <div class="progress-content">
+                                    <h6>Reliabilty & Transparency</h6>
+                                    <span class="counting">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="about-content mt-55" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
+                            <div class="section-title mb-25">
+                                <span class="sub-title mb-10">About Us</span>
+                                <h2>Leading Limestone Production & Supply Company</h2>
+                            </div>
+                            <p>We specialize in extracting, processing, and delivering high-quality limestone products for fertilizer blending, construction, agriculture, and industrial applications. Our commitment to quality ensures we meet the highest standards for every project, big or small.</p>
+                            <div class="row gap-45 pt-15">
+                                <div class="col-sm-6">
+                                    <div class="service-item-two">
+                                        <h6>Trusted Limestone Production Company</h6>
+                                        <p>Known for our reliability and innovation, we focus on delivering top-grade limestone products and exceptional service to our clients.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="service-item-two">
+                                        <h6>Advanced Technology & Skilled Professionals</h6>
+                                        <p>Using advanced technology and a team of skilled experts, we ensure efficient, precise, and sustainable limestone processing tailored to your needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="about.html" class="theme-btn mt-30">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-lines">
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+        </section>
+
+        <section class="services-area pt-50 rpt-100 pb-100 rpb-70 rel z-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section-title text-center mb-60" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                            <span class="sub-title mb-10">Our Services</span>
+                            <h2>We Provide Best Quality Processing Service</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Mineral Supplement</h5>
+                            <p>Supplying limestone products to provide essential micronutrients for healthier and productive plants.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Limestone Processing</h5>
+                            <p>Expertly processed limestone for various applications, meeting industry standards for quality and durability.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Blending Fertilizers</h5>
+                            <p>Blending NPK and organic compost fertilizers to enhance plant growth naturally.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Crushing & Screening</h5>
+                            <p>Precision crushing and screening to produce limestone aggregates of the right size and quality.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Bulk Material Supply</h5>
+                            <p>Reliable supply of bulk limestone materials for large-scale projects and ongoing needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="service-item">
+                            <h5>Aggregate Production</h5>
+                            <p>High-quality aggregate production to support construction and industrial applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-50">
+                    <a href="services.html" class="theme-btn">View All Services</a>
+                </div>
+            </div>
+            <div class="bg-lines">
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+        </section>
+
+        <section class="why-choose-area py-70 rpy-100 rel z-1">
+            <div class="container">
+                <div class="row gap-90 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="why-choose-left rmb-55" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="50">
+                            <div class="section-title mb-25">
+                                <span class="sub-title mb-10">Why Choose Us</span>
+                                <h2>Leading Experts in Limestone Processing</h2>
+                            </div>
+                            <p>We offer unparalleled expertise and commitment in limestone processing, ensuring top-quality products for every application.</p>
+                            <div class="service-item-three mt-30">
+                                <div class="content">
+                                    <h5>Reliable Service</h5>
+                                    <p>We provide consistent and reliable limestone products that meet industry standards and client expectations.</p>
+                                </div>
+                            </div>
+                            <div class="service-item-three">
+                                <div class="content">
+                                    <h5>Expert Team</h5>
+                                    <p>Our skilled team uses advanced techniques to ensure superior quality and performance in limestone processing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="why-choose-right" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="50">
+                            <div class="progress-with-service">
+                                <div class="service-progress one">
+                                    <span class="counting">0</span>
+                                </div>
+                                <div class="content">
+                                    <h5>High-Quality Products</h5>
+                                    <p>We ensure top-grade limestone for construction and industrial use, maintaining strict quality control.</p>
+                                </div>
+                            </div>
+                            <div class="progress-with-service">
+                                <div class="service-progress two">
+                                    <span class="counting">0</span>
+                                </div>
+                                <div class="content">
+                                    <h5>Efficient Processing</h5>
+                                    <p>Our efficient processing techniques optimize limestone production for timely delivery and cost-effectiveness.</p>
+                                </div>
+                            </div>
+                            <div class="progress-with-service">
+                                <div class="service-progress three">
+                                    <span class="counting">0</span>
+                                </div>
+                                <div class="content">
+                                    <h5>Sustainable Practices</h5>
+                                    <p>We prioritize sustainable practices in limestone extraction and processing to minimize environmental impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-lines">
+                <span></span><span></span>
+                <span></span><span></span>
+            </div>
+        </section>
+
+        <footer class="main-footer rel z-1">
+            <div class="footer-top pt-80 pb-30">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-2 col-sm-6">
+                            <div class="footer-widget newsletter-widget" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="50">
+                                <h5 class="footer-title">Visit Us</h5>
+                                <p style="color:white;">
+                                    Tamburawa Road, 
+                               </p>
+                                <p style="color:white;">Kumbotso Local Government, </p>
+                                <p style="color:white;">Kano State,</p>
+                                <p style="color:white;">Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-lines for-black-bg">
+                    <span></span><span></span>
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div class="footer-bottom pt-20 pb-5 rpt-25">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="copyright-text">
+                                <p>&copy; 2024 <a href="index.html">Limestone Processing Links, Nigeria</a>. All Rights reserved. </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <ul class="footer-bottom-nav">
+                                <li><a href="https://x.com/limestonpll" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <li><a href="https://www.linkedin.com/in/limestone-processing-ltd-453960328/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="scroll-top scroll-to-target" data-target="html"><span class="far fa-angle-double-up"></span></button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+</body>
+</html>
